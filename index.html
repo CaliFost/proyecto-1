@@ -11,22 +11,26 @@
     <title>AimGame - Proyecto 1 IAW (Fausto Genovese)</title>
   
   </head>
+  
   <body class="container" id ="gameContainer" >
 
     <!-- JavaScript -->
     <script src="js/app.js"></script>
 
-    <h1 id="score" ></h1>
-    <div class="container">
+    <div class="row">
+      <div class="col"><h1 id="score" ></h1></div>
+      <div class="w-100"></div>
+      <div class="col"> <h1 id="maxScore"> Puntaje Máximo = 0 </h1> </div>
+    </div>
+    
     <div class="row">
       <div class="col-sm">
-        <h1> Jugar! </h1>
-        <button type="button" class="btn btn-primary" onclick="startGame()".>Jugar</button>
-      </div>
-
-      <div class="col-sm">
-        <h1>Switch!</h1>
+        <h1>☼</h1>
         <button id="switch" onclick="toggleTheme()" >Switch</button>
+      </div>
+      <div class="col-sm">
+        <h1>Jugar!</h1>
+        <button type="button" class="btn btn-primary" onclick="startGame()".>Jugar</button>
       </div>
 
       <div class="col-sm"></div>
@@ -39,8 +43,11 @@
       </div>
 
     </div>
-    </div>
   </div>
+
+
+
+
 </div>
   </body>
 </html>

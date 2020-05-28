@@ -6,9 +6,11 @@ var GAME_WIDTH=640
 var GAME_HEIGHT=480
 var TARGET_W=20
 var TARGET_H=20
+//var dif 
 
 function startGame() {
     gamearea.start();
+    //dif = mode();
 }
 
 function targetGone(){
@@ -110,6 +112,7 @@ class target {
             else {
                 gamearea.context.fillRect(this.x, this.y, TARGET_W, TARGET_H);
                 this.y += .4;
+                //this.y+= mode.getVelocity();
             }
         };
     }
@@ -136,3 +139,18 @@ function toggleTheme() {
        setTheme('theme-light');
    }
 })();
+
+/*
+class mode{
+    constructor(){
+        this.diff=1;
+    }
+    setDifficulty(n){
+        this.diff=n;
+    }
+    getVelocity(){
+        if(this.diff==1)        return .4;
+        else if(this.diff==0)   return .2;
+        else                    return .8;
+    }
+}*/

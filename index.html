@@ -1,18 +1,53 @@
 <!doctype html>
-<html>
+<html lang="es" class="theme-light">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-    <title>Proyecto 1</title>
+    <title>AimGame - Proyecto 1 IAW (Fausto Genovese)</title>
+  
   </head>
-  <body>
-    <h1>Proyecto 1</h1>
+  
+  <body class="container" id ="gameContainer" >
 
     <!-- JavaScript -->
     <script src="js/app.js"></script>
+
+    <div class="row">
+      <div class="col"><h1 id="score" ></h1></div>
+      <div class="w-100"></div>
+      <div class="col"> <h1 id="maxScore"> Puntaje Máximo = 0 </h1> </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-sm">
+        <h1>☼</h1>
+        <button id="switch" onclick="toggleTheme()" >Switch</button>
+      </div>
+      <div class="col-sm">
+        <h1>Jugar!</h1>
+        <button type="button" class="btn btn-primary" onclick="startGame()".>Jugar</button>
+      </div>
+
+      <div class="col-sm"></div>
+        <h1>Dificultad</h1>
+        <ul class="list-group list-group-vertical">
+          <li class="list-group-item">Dificil</li>
+          <li class="list-group-item">Media</li>
+          <li class="list-group-item">Fácil</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+</div>
   </body>
 </html>
